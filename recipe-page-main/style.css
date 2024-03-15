@@ -1,0 +1,163 @@
+@charset "UTF8";
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+
+:root{
+    --color1: hsl(14, 45%, 36%);
+    --color2: hsl(332, 51%, 32%);
+    --color3: hsl(330, 100%, 98%);
+    --color4: hsl(30, 54%, 90%);
+    --color5: hsl(30, 18%, 87%);
+    --color6: hsl(30, 10%, 34%);
+    --color07: hsl(24, 5%, 18%);
+
+    --font01: "Young Serif", serif;
+    --font02: "Outfit", sans-serif;
+}
+ 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: var(--color4);
+    height: 100%;
+    display: flex;
+    place-content: center;
+}
+
+main {
+    background-color: white;
+    font-family: var(--font02);
+    font-size: 1.1em;
+    line-height: 1.5em;
+    color: var(--color6);
+    max-width: 800px;    
+    border-radius: 30px;
+    padding: 40px;
+    margin: auto;
+}
+
+img{
+    max-width: 800px;
+    width: 100%;
+    padding-bottom: 50px;
+    border-radius: 30px 30px 30px 30px;
+    margin top
+}
+
+h1 h2{
+    font-family: var(--font02);
+}
+
+h1{
+    font-size: 2em;
+    color: var(--color07);
+    line-height: 1em;
+    
+}
+
+section{
+    padding: 1.5em;
+    margin: auto;
+    width: 90%;
+}
+
+section.inicial{
+    background-color: var(--color3);
+    border-radius: 10px;
+}
+
+section.inical > ul > li::marker{
+    color: var(--color2);
+}
+
+
+section.inicial >h2{
+    color: var(--color2);
+    
+}
+
+section.ingre{
+    border-bottom: 1px solid var(--color5)
+}
+
+section.ingre > h2{
+    color: var(--color1);      
+}
+
+h1, h2, p, ul, ol{
+    padding: 16px;
+}
+
+.instructions > h2{
+    color: var(--color1);
+
+}
+
+ul{
+    line-height: 2em;
+    list-style-position: outside;
+}
+
+ul > li span {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    left: 20px;
+}
+
+ul.dot > li::marker{
+    color: var(--color2);
+    font-size: 1.2em;
+}
+
+ol > li::marker{
+    color: var(--color1);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.instructions > h2{
+    font-weight: bold;
+    
+}
+
+.nutriinfo{
+    border-top: 1px solid var(--color5);
+}
+
+div.table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:1px;
+    text-indent: 16px;
+}
+
+.row-border {
+    border-top:1px solid var(--color05) ;
+    grid-column: 1 / 4;
+}
+
+
+
+@media screen and (min-width: 800px) {
+    main {
+        height: fit-content;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    img {
+        width: 90%;
+        margin: 5%;
+        border-radius: 15px;
+    }
+}
